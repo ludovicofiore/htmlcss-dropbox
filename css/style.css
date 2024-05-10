@@ -19,10 +19,15 @@
 }
 
 .link-box {
-    background-color: rgb(0, 97, 252);
+    background-color: rgb(0, 98, 255);
     color: white;
     padding: 5px 10px;
     display: inline-block;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.link-box:hover {
+    background-color: rgb(140, 180, 245);
 }
 
 .full-width{
@@ -111,7 +116,6 @@ section {
     gap: 30px;
 }
 
-
 #period-plan {
     width: 100%;
 }
@@ -119,6 +123,18 @@ section {
 #period-plan span {
     margin-left: 10px;
     margin-right: 20px;
+}
+
+.fa-circle-dot {
+    color: rgb(0, 97, 252);
+}
+
+.fa-circle-dot:hover {
+    cursor: pointer;
+}
+
+.fa-circle:hover {
+    cursor: pointer;
 }
 
 
@@ -217,6 +233,11 @@ section {
     background-color: white;
     border: 1px solid black;
     color: black;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.white-bg:hover {
+    background-color: rgb(187, 187, 187);
 }
 
 
