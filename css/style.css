@@ -59,6 +59,7 @@ section {
     height: 80px;
     background-color: white;
     margin-top: 0;
+    border-bottom: 2px solid rgb(210, 210, 212);
 }
 
 .nav-flex{
@@ -317,7 +318,7 @@ footer {
 /* regole contatti */
 .footer-centered {
     width: 75%;
-    margin: 20px 0;
+    padding: 40px 0;
 }
 
 #footer-flex {
@@ -327,17 +328,30 @@ footer {
 
 .contacts {
     width: calc(100%/5 - 40px);
-    /* debug */
-    height: 200px;
-    background-color: brown;
+    color: white;
+}
+
+.contact-list {
+    margin-top: 15px;
+    list-style-type: none;
+    line-height: 2;
+    font-size: small;
+}
+
+.contact-list a {
+    color: white;
 }
 
 
 /* regole lingua */
 #language {
+    width: 10%;
     border-top: 2px solid white;
-    /* debug */
-    width: 20%;
-    height: 70px;
-    background-color: darkmagenta;
+    color: white;
+    padding: 20px 0;
+}
+
+#language a {
+    color: white;
+    padding: 0 5px;
 }
