@@ -11,6 +11,13 @@
     justify-content: center;
 }
 
+.centered {
+    width: 70%;
+    /* debug */
+    /* background-color: lightgrey; */
+    margin: 30px 0;
+}
+
 .link-box {
     background-color: rgb(0, 97, 252);
     color: white;
@@ -85,14 +92,6 @@ a {
 
 
 /* REGOLE PARTE CENTRALE */
-
-.centered {
-    width: 70%;
-    /* debug */
-    /* background-color: lightgrey; */
-    margin: 30px 0;
-}
-
 
 /* regole piani abbonamento */
 #plan-flex {
@@ -197,18 +196,22 @@ a {
 /* regole trova partner */
 .image {
     width: 70%;
-    /* debug */
-    /* background-color: red; */
-    /* height: 400px; */
 }
 
 .text {
     width: 30%;
-    /* debug */
-    /* background-color: blue; */
-    /* height: 400px; */
 }
 
+#partner-text {
+    margin-top: 70px;
+    padding: 0 30px;
+}
+
+.white-bg {
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+}
 
 /* regole operazioni */
 #operations-flex {
