@@ -13,8 +13,6 @@
 
 .centered {
     width: 70%;
-    /* debug */
-    /* background-color: lightgrey; */
     margin: 30px 0;
 }
 
@@ -73,13 +71,22 @@ section {
     margin: 0 20px;
 }
 
+.hover-border {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.hover-border:hover {
+    border-bottom: 2px solid rgb(0, 98, 255);
+}
+
 
 /* regole jumbotron */
 
 #jumbo-bg {
     width: 100%;
     background-color: rgb(181, 209, 232);
-    height: 100vh;
     margin-top: 80px;
 }
 
@@ -272,7 +279,6 @@ section {
 }
 
 #partner {
-    /* debug */
     width: 100%;
     min-height: 500px;
 }
