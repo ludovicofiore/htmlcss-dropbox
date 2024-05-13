@@ -380,13 +380,44 @@ section {
 }
 
 .faq {
-    display: flex;
-    justify-content: space-between;
+    /* display: flex;
+    justify-content: space-between; */
     align-items: center;
     padding: 40px 0;
     padding-right: 30px;
     border-top: 1px solid black;
     border-bottom: 1px solid black;
+    position: relative
+}
+
+.fa-chevron-down {
+    position: absolute;
+    right: 30px;
+    top: 40px;
+}
+
+.fa-chevron-up {
+    position: absolute;
+    right: 30px;
+    top: 40px;
+    display: none;
+}
+
+.no-display-text {
+    padding: 30px 0;
+    display: none;
+}
+
+.faq:hover .no-display-text {
+    display: inline-block;
+}
+
+.faq:hover .fa-chevron-down {
+    display: none;
+}
+
+.faq:hover .fa-chevron-up {
+    display: inline-block;
 }
 
 #no-border {
