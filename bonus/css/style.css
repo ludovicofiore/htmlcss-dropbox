@@ -1,0 +1,446 @@
+/* REGOLE GENERALI */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+}
+
+.centered {
+    width: 70%;
+    margin: 30px 0;
+}
+
+.link-box {
+    background-color: rgb(0, 98, 255);
+    color: white;
+    padding: 5px 10px;
+    display: inline-block;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.link-box:hover {
+    background-color: rgb(140, 180, 245);
+}
+
+.full-width{
+    width: 100%;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h2 {
+    width: 100%;
+    font-size: 35px;
+    padding: 20px 0;
+}
+
+section {
+    margin-top: 30px;
+}
+
+
+/* REGOLE INTESTAZIONE */
+
+/* regole barra fissa */
+#fixed {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 900;
+    justify-content: space-between;
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    margin-top: 0;
+    border-bottom: 2px solid rgb(210, 210, 212);
+}
+
+.nav-flex{
+    align-items: center;
+    gap: 20px;
+    margin: 0 20px;
+}
+
+.hover-border {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.hover-border:hover {
+    border-bottom: 2px solid rgb(0, 98, 255);
+}
+
+.no-display {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    margin-top: 2px;
+    display: none;
+}
+
+.hover-border:hover .no-display {
+    display: inline-block;
+}
+
+.no-display a {
+    background-color: white;
+    border: 1px solid rgb(210, 210, 212);
+    display: block;
+    padding: 10px;
+}
+
+
+/* regole jumbotron */
+
+#jumbo-bg {
+    width: 100%;
+    background-color: rgb(181, 209, 232);
+    margin-top: 80px;
+    height: 650px;
+}
+
+#jumbo-centered {
+    width: 80%;
+    flex-wrap: wrap;
+}
+
+#jumbo-centered h1 {
+    font-size: 60px;
+    font-weight: 800;
+    margin: 30px 0;
+}
+
+.text p {
+    padding: 25px 0;
+}
+
+.fa-arrow-down {
+    font-size: 30px;
+}
+
+.image img {
+    width: 100%;
+}
+
+
+/* REGOLE PARTE CENTRALE */
+
+/* regole piani abbonamento */
+#plan-flex {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+#period-plan {
+    width: 100%;
+}
+
+#period-plan span {
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
+.fa-circle-dot {
+    color: rgb(0, 97, 252);
+}
+
+.fa-circle-dot:hover {
+    cursor: pointer;
+}
+
+.fa-circle:hover {
+    cursor: pointer;
+}
+
+
+/* regole colonne */
+.column-plan {
+    width: calc(100% / 3 - 60px);
+    border: 2px solid rgb(210, 210, 212);
+}
+
+.title-plan {
+    text-align: center;
+    padding: 10px;
+    border-bottom: 2px solid rgb(210, 210, 212);
+}
+
+.container-plan {
+    margin: 25px 15px;
+}
+
+.container-plan h3 {
+    margin-bottom: 15px;
+}
+
+.monthly {
+    margin-top: 5px;
+    color: rgb(107, 107, 107);
+    display: block;
+}
+
+.column-list {
+    margin-top: 30px;
+    margin-left: 25px;
+    margin-bottom: 20px;
+    padding-left: 0;
+}
+
+.column-list li {
+    margin: 20px 0;
+}
+
+.alternative-link {
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.alternative-link a {
+    text-decoration: underline;
+    color: rgb(2, 2, 237);
+}
+
+.spacer {
+    width: 20%;
+    margin: 35px 0;
+    border: 1px solid rgb(210, 210, 212);
+}
+
+.fa-check {
+    color: rgb(5, 101, 255);
+}
+
+
+#row-plan {
+    width: 100%;
+    border: 2px solid rgb(210, 210, 212);
+    display: block;
+}
+
+#row-text {
+    width: 70%;
+}
+
+#row-text p {
+    margin-top: 30px;
+}
+
+#link-box-container {
+    width: 30%;
+}
+
+
+/* regole trova partner */
+.image {
+    width: 70%;
+}
+
+.text {
+    width: 30%;
+}
+
+#partner-text {
+    margin-top: 70px;
+    padding: 0 30px;
+}
+
+.white-bg {
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.white-bg:hover {
+    background-color: rgb(187, 187, 187);
+}
+
+
+/* regole operazioni */
+#operations-flex {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.operations {
+    width: calc(100% / 3 - 40px);
+}
+
+.card-image img {
+    width: 100%;
+}
+
+.card-text h3 {
+    margin-bottom: 30px;
+}
+
+
+
+/* regole clienti partner */
+#partner-flex{
+    flex-wrap: wrap;
+}
+
+#title-partner {
+    margin-bottom: 50px;
+}
+
+#partner {
+    width: 100%;
+    min-height: 500px;
+}
+
+.partner-box {
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(100% / 3);
+}
+
+.box-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 50%;
+}
+
+.box-image img {
+    max-width: 60%;
+    filter: invert(100%) sepia(72%) saturate(2%) hue-rotate(230deg) brightness(102%) contrast(101%);
+}
+
+#florida{
+    height: 10%;
+}
+
+#bg-green {background-color: rgb(161, 212, 155);}
+#bg-dark-red {background-color: rgb(97, 8, 43);}
+#bg-light-blue {background-color: rgb(0, 148, 207);}
+#bg-light-red {background-color: rgb(255, 28, 28);}
+#bg-red {background-color:rgb(214, 0, 32);}
+#bg-dark-grey {background-color:rgb(181, 209, 232) ;}
+#bg-blue {background-color: rgb(13, 36, 130);}
+#bg-yellow {background-color: rgb(255, 217, 48);}
+
+#center-block {
+    padding: 20px 35px;
+    flex-direction: column;
+    background-color: rgb(245, 245, 245);
+}
+
+#center-block img {
+    max-width: 40%;
+    max-height: 20%;
+}
+
+#center-block p {
+    margin-bottom: 30px;
+}
+
+/* regole prova gratuita */
+#colored-bg {
+    width: 100%;
+    background-color: rgb(181, 209, 232);
+    margin-top: 0;
+}
+
+#free-trial {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 60px 0;
+}
+
+#free-trial div {
+    width: 30%;
+}
+
+#free-trial h2 {
+    color: rgb(97, 8, 43);
+}
+
+
+/* regole domande frequenti */
+#faq-title {
+    margin: 20px 0;
+}
+
+.faq {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0;
+    padding-right: 30px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+#no-border {
+    border: 0;
+}
+
+#last-section {
+    padding-bottom: 40px;
+}
+
+
+
+/* REGOLE PIE DI PAGINA */
+footer {
+    background-color: black;
+}
+
+/* regole contatti */
+.footer-centered {
+    width: 75%;
+    padding: 40px 0;
+}
+
+#footer-flex {
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.contacts {
+    width: calc(100%/5 - 40px);
+    color: white;
+}
+
+.contact-list {
+    margin-top: 15px;
+    list-style-type: none;
+    line-height: 2;
+    font-size: small;
+}
+
+.contact-list a {
+    color: white;
+}
+
+
+/* regole lingua */
+#language {
+    width: 10%;
+    border-top: 2px solid white;
+    color: white;
+    padding: 20px 0;
+}
+
+#language a {
+    color: white;
+    padding: 0 5px;
+}
